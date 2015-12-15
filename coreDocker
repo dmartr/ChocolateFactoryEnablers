@@ -1,0 +1,15 @@
+FROM ubuntu:15.10
+
+#install node.js and npm 
+RUN apt-get update
+RUN apt-get -y install build-essential
+RUN apt-get install nodejs
+RUN apt-get install npm
+
+#Bundle app source 
+COPY . /ioTest
+#Install app dependencies 
+RUN  cd /ioTest: npm install 
+
+EXPOSE 1028
+CMD ["node", "/ioTest/app.js"]

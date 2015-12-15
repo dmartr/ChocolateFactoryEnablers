@@ -1,0 +1,6 @@
+- Second iteration of the design of the implementation of the support channels
+- Footer design and implementation 
+- Home page tweaks to final design 
+- Fixes to forms (enabler creation, draft modification) 
+- Responsive design fixes for very big and small screen devices
+- Finished migration to fiware.org 
